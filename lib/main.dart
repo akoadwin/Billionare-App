@@ -22,7 +22,7 @@ class _MyAppState extends State<MyApp> {
 
   Future<void> addMoney() async {
     setState(() {
-      balance = balance + 500;
+      balance = balance + 5000;
     });
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.setDouble('balance', balance);
